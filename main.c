@@ -3,6 +3,12 @@
 #include <unistd.h>
 
 #define DIMENSION 23
+#define RED   "\x1B[31m"
+#define GRN   "\x1B[32m"
+#define YEL   "\x1B[33m"
+#define BLU   "\x1B[34m"
+#define MAG   "\x1B[35m"
+#define RESET "\x1B[0m"
 
 int sand_pile[DIMENSION][DIMENSION];
 
@@ -120,7 +126,7 @@ int main(int argc, char* argv[])
         add_sand(start, start);
         stable = check_stable();
         print_sandpile();
-
+        printf(RED "red\n");
     }
 
     return 0;
