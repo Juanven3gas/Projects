@@ -1,1 +1,3 @@
-Albian SandPile Simulation. 
+Albian SandPile Simulation. The simulation uses recursion in order to perform the toppling, 
+and the sleep time between steps is approximately 5 micro seconds. This simulation includes 
+Colored text.
