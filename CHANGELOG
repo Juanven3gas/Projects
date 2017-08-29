@@ -1,0 +1,5 @@
+8/24 Started coding. Vreated function to initialize a doulbe array of 5x5 and another funtion to print the array.
+8/25 Created function that will add grain of sand to center most tile and loop through grid in order to check for overflows.
+8/26 Debugged overflows remaining and switched the add sand function to a recursive function that will take in a position and topple or increment accordingly.
+Also, added code to take in command line arguements by groups of 3 and initialize thearray accordingly.
+8/29 Added code that will add color to the numbers and made the wait time shorter was orginally approx. .5 sec and made array 23x23. 
