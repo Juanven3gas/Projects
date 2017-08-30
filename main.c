@@ -35,8 +35,29 @@ void print_sandpile(void)
     {
         for(j = 0; j < DIMENSION; j++)
         {
-
-            printf("%2d", sand_pile[i][j]);
+	  int grains = sand_pile[i][j];
+	  
+	  if(grains == 1)
+	    {
+	       printf(BLU "%2d" RESET, sand_pile[i][j]);
+       
+	    }
+	  else if(grains == 2)
+	    {
+	       printf(GRN "%2d" RESET, sand_pile[i][j]);
+	    }
+	  else if(grains == 3)
+	    {
+	       printf(MAG "%2d"RESET, sand_pile[i][j]);
+	    }
+	  else if (grains == 4)
+	    {
+	       printf(RED "%2d" RESET, sand_pile[i][j]);
+	    }
+	  else
+	    {
+	       printf(YEL "%2d" RESET , sand_pile[i][j]);
+	    }
         }
 
         printf("\n");
@@ -44,7 +65,7 @@ void print_sandpile(void)
 
     printf("\n");
 
-    usleep(500000);
+    usleep(50000);
 
 }
 
@@ -126,7 +147,6 @@ int main(int argc, char* argv[])
         add_sand(start, start);
         stable = check_stable();
         print_sandpile();
-        printf(RED "red\n");
     }
 
     return 0;
