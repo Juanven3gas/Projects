@@ -1,2 +1,0 @@
-sandpile: main.c
-	gcc -wall -werror -g main.c -o sandpile
